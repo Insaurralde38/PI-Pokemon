@@ -165,9 +165,9 @@ Se desarrollo un servidor en Node/Express con las siguientes rutas:
 
 ### **🖱 FRONT-END**
 
-Se debe desarrollar una aplicación utilizando **React** y **Redux** que contenga las siguientes vistas:
+Se desarrollo una aplicación de React/Redux que contiene:
 
-**📍 LANDING PAGE |** deberás crear una página de inicio o bienvenida con:
+**📍 LANDING PAGE |**
 
 -  Alguna imagen de fondo representativa al proyecto.
 -  Botón para ingresar a la **`home page`**.
