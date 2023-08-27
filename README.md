@@ -2,7 +2,7 @@
     <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img>
 </p>
 
-# **POKEMON** | Proyecto Individual
+# **Pokémon** | Proyecto Individual
 
 <p align="left">
   <img height="150" src="./pokemon.png" />
@@ -134,39 +134,28 @@ Deberás crear dos modelos para tu base de datos. Una será para los pokemones y
 
 ### **🖱 BACK-END**
 
-Para esta parte deberás construir un servidor utilizando **NodeJS** y **Express**. Tendrás que conectarlo con tu base de datos mediante **Sequelize**.
-
-Tu servidor deberá contar con las siguientes rutas:
+Se desarrollo un servidor en Node/Express con las siguientes rutas:
 
 #### **📍 GET | /pokemons**
 
--  Obtiene un arreglo de objetos, donde cada objeto es un pokemon con su información.
+-  Obtiene un listado de los pokemons desde pokeapi.
 
 #### **📍 GET | /pokemons/:idPokemon**
 
--  Esta ruta obtiene el detalle de un pokemon específico. Es decir que devuelve un objeto con la información pedida en el detalle de un pokemon.
--  El pokemon es recibido por parámetro (ID).
--  Tiene que incluir los datos del tipo de pokemon al que está asociado.
--  Debe funcionar tanto para los pokemones de la API como para los de la base de datos.
+-  Obtiene el detalle de un pokemon en particular.
 
 #### **📍 GET | /pokemons/name?="..."**
 
--  Esta ruta debe obtener todos aquellos pokemons que coinciden con el nombre recibido por query.
--  Debe poder buscarlo independientemente de mayúsculas o minúsculas.
--  Si no existe el pokemon, debe mostrar un mensaje adecuado.
--  Debe buscar tanto los de la API como los de la base de datos.
+-  Obtiene el pokemon que coincida exactamente con el nombre pasado como query parameter (Puede ser de pokeapi o creado por nosotros).
 
 #### **📍 POST | /pokemons**
 
--  Esta ruta recibirá todos los datos necesarios para crear un pokemon y relacionarlo con sus tipos solicitados.
--  Toda la información debe ser recibida por body.
--  Debe crear un pokemon en la base de datos, y este debe estar relacionado con sus tipos indicados (debe poder relacionarse al menos con dos).
+-  Recibe los datos recolectados desde el formulario controlado de la ruta de creación de pokemons por body.
+-  Crea un pokemon en la base de datos.
 
 #### **📍 GET | /types**
 
--  Obtiene un arreglo con todos los tipos de pokemones.
--  En una primera instancia, cuando la base de datos este vacía, deberás guardar todos los tipos que encuentres en la API.
--  Estos deben ser obtenidos de la API (se evaluará que no haya hardcodeo). Luego de obtenerlos de la API, deben ser guardados en la base de datos para su posterior consumo desde allí.
+-  Obtiene todos los tipos de pokemons posibles.
 
 <br />
 
@@ -234,16 +223,5 @@ Este formulario debe ser **controlado completamente con JavaScritp**. No se pued
 <br />
 
 ---
-
-<br />
-
-### **🖱 TESTING**
-
-Ten en cuenta que en esta instancia no es obligatorio el desarrollo de testing para tu aplicación. De igual manera, te desafiamos a que los hagas, ¡ya que suman puntos!
-
--  Al menos tener un componente del frontend con sus tests respectivos.
--  Al menos tener dos rutas del backend con sus tests respectivos.
--  Al menos tener un modelo de la base de datos con sus tests respectivos.
-
 
 <br />
