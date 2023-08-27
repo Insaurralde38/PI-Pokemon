@@ -74,7 +74,7 @@ Está permitido, **bajo tu responsabilidad**, actualizar las dependencias a vers
 
 ## **📖 ENUNCIADO GENERAL**
 
-La idea de este proyecto es construir una aplicación web a partir de la API [**pokeapi**](https://pokeapi.co/) en la que se pueda:
+Es una aplicación en la cual se puedan ver los distintos Pokemon utilizando la api externa [**pokeapi**](https://pokeapi.co/) y a partir de ella poder, entre otras cosas:
 
 -  Buscar pokemones.
 -  Visualizar la información de los pokemones.
@@ -169,26 +169,27 @@ Se desarrollo una aplicación de React/Redux que contiene:
 
 **📍 LANDING PAGE |**
 
--  Alguna imagen de fondo representativa al proyecto.
+-  Una imagen de fondo representativa del proyecto.
 -  Botón para ingresar a la **`home page`**.
 
 <br />
 
-**📍 HOME PAGE |** la página principal de tu SPA debe contener:
+**📍 HOME PAGE |** la página principal de la SPA contiene:
 
--  SearchBar: un input de búsqueda para encontrar pokemon por nombre. La búsqueda debe ser exacta, por lo que sólo lo encontrará si se lo busca con su nombre completo.
--  Sector en el que se vea un listado de cards con los pokemones. Al iniciar deberá cargar los primeros resultados obtenidos desde la ruta **`GET /pokemons`** y deberá mostrar su:
+-  SearchBar: un input de búsqueda para encontrar pokemones por nombre. La búsqueda debe ser exacta, por lo que sólo lo encontrará si se lo busca con su nombre completo.
+-  Sector en el que se ve el listado de cards con los pokemones. Al iniciar carga los primeros 12 resultados obtenidos desde la ruta **`GET /pokemons`** y muestra su:
+   -  ID.
    -  Imagen.
    -  Nombre.
    -  Tipos.
--  Cuando se le hace click a una Card deberá redirigir al detalle de ese pokemon específico.
--  Botones/Opciones para **filtrar** por tipo, y por si su origen es de la API o de la base de datos (creados por nosotros desde el formulario).
--  Botones/Opciones para **ordenar** tanto ascendentemente como descendentemente los pokemones por orden alfabético y por ataque.
--  Paginado: el listado de pokemones se hará por partes. Tu SPA debe contar con un paginado que muestre un total de 12 pokemones por página.
+-  Cuando se le hace click a una Card redirige al detalle de ese pokemon específico.
+-  Botones/Opciones para **filtrar** por tipo, y por si su origen es de la API o de la base de datos (creados desde el formulario).
+-  Botones/Opciones para **ordenar** tanto ascendentemente como descendentemente los pokemones por orden alfabético, ataque, defensa y por velocidad.
+-  Paginado: Para ir buscando y mostrando 12 pokemones por pagina.
 
 <br />
 
-**📍 DETAIL PAGE |** en esta vista se deberá mostrar toda la información específica de un pokemon:
+**📍 DETAIL PAGE |** en esta página se muestra toda la información específica de un pokemon:
 
 -  ID.
 -  Nombre.
@@ -196,29 +197,28 @@ Se desarrollo una aplicación de React/Redux que contiene:
 -  Vida.
 -  Ataque.
 -  Defensa.
--  Velocidad (si tiene).
--  Altura (si tiene).
--  Peso (si tiene).
+-  Velocidad.
+-  Altura.
+-  Peso.
 -  Tipo.
 
 <br />
 
-**📍 FORM PAGE |**: en esta vista se encontrará el formulario para crear un nuevo pokemon.
+**📍 FORM PAGE |**: en esta página se encuentra el formulario para crear un nuevo pokemon.
 
-Este formulario debe ser **controlado completamente con JavaScritp**. No se pueden utilizar validaciones HTML, ni utilizar librerías especiales para esto. Debe contar con los siguientes campos:
+Este formulario es **controlado completamente con JavaScritp**. Cuenta con los siguientes campos:
 
 -  Nombre.
--  Imagen.
 -  Vida.
 -  Ataque.
 -  Defensa.
--  Velocidad (si tiene).
--  Altura (si tiene).
--  Peso (si tiene).
+-  Velocidad.
+-  Altura.
+-  Peso.
 -  Posibilidad de seleccionar/agregar varios tipos en simultáneo.
 -  Botón para crear el nuevo pokemon.
 
-> [**IMPORANTE**]: es requisito que el formulario de creación esté validado sólo con JavaScript. Puedes agregar las validaciones que consideres. Por ejemplo: que el nombre del pokemon no pueda contener números, o que la defensa no pueda exceder determinado valor, etc.
+> [**IMPORANTE**]: el formulario de creación está validado sólo con JavaScript.
 
 <br />
 
