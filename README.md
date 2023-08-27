@@ -105,26 +105,26 @@ Es una aplicación en la cual se puedan ver los distintos Pokemon utilizando la 
 
 ### **🖱 BASE DE DATOS**
 
-Deberás crear dos modelos para tu base de datos. Una será para los pokemones y la otra será para los tipos de pokemones (pueden llevar el nombre que tu quieras). La relación entre ambos modelos debe ser de muchos a muchos. A continuación te dejamos las propiedades que debe tener cada modelo. Aquellas marcadas con un asterísco son obligatorias.
+Son 2 modelos de base de datos. Una es para los pokemones y la otra es para los tipos de pokemones. La relación entre ambos modelos es de muchos a muchos. A continuación las propiedades que tiene cada modelo:
 
-**📍 MODELO 1 | Pokemons**
+**📍 POKEMONS**
 
--  ID. \*
--  Nombre. \*
--  Imagen. \*
--  Vida. \*
--  Ataque. \*
--  Defensa. \*
--  Velocidad.
--  Altura.
--  Peso.
+-  ID
+-  Nombre
+-  Imagen
+-  Vida
+-  Ataque
+-  Defensa
+-  Velocidad
+-  Altura
+-  Peso
 
 <br />
 
-**📍 MODELO 2 | Type**
+**📍 TYPE**
 
--  ID. \*
--  Nombre. \*
+-  ID
+-  Nombre
 
 <br />
 
