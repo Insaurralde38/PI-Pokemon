@@ -1,6 +1,12 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+<p align='left'>
+    <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img>
+</p>
 
 # **POKEMON** | Proyecto Individual
+
+<p align="left">
+  <img height="150" src="./pokemon.png" />
+</p>
 
 ## **📌 OBJETIVOS**
 
@@ -13,15 +19,6 @@
 
 <br />
 
----
-
-## **⏱ HORARIOS Y FECHAS**
-
-El proyecto individual tiene una duración máxima de tres semanas. Se inicia la primera semana con un Kick-Off, y se agendará una corrección personalizada la última semana.
-
-En el caso de completar todas las tareas antes de dicho lapso se podrá avisar a su instructor para coordinar una fecha de presentación del trabajo (DEMO).
-
-<br />
 
 ---
 
@@ -48,8 +45,6 @@ npm -v
 -  **react-redux**: 7.2.3
 
 Está permitido, **bajo tu responsabilidad**, actualizar las dependencias a versiones más actuales si lo deseas. Versiones mas actuales podrían presentar configuraciones diferentes respecto a las versiones en las que venimos trabajando durante el bootcamp.
-
-### **⛔️ Está rotundamente prohibido utilizar librerías externas para aplicar estilos a la SPA. Tendrás que utilizar CSS mediante algunas de las opciones vistas en el bootcamp (CSS, Legacy, Inline Styling, CSS Modules o Styled Components).**
 
 <br />
 
@@ -250,10 +245,5 @@ Ten en cuenta que en esta instancia no es obligatorio el desarrollo de testing p
 -  Al menos tener dos rutas del backend con sus tests respectivos.
 -  Al menos tener un modelo de la base de datos con sus tests respectivos.
 
-<br />
-
----
 
 <br />
-
-<img src="./pokemon.png" alt="" />
