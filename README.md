@@ -185,7 +185,7 @@ Se desarrollo una aplicación de React/Redux que contiene:
 -  Cuando se le hace click a una Card redirige al detalle de ese pokemon específico.
 -  Botones/Opciones para **filtrar** por tipo, y por si su origen es de la API o de la base de datos (creados desde el formulario).
 -  Botones/Opciones para **ordenar** tanto ascendentemente como descendentemente los pokemones por orden alfabético, ataque, defensa y por velocidad.
--  Paginado: Para ir buscando y mostrando 12 pokemones por pagina.
+-  Paginado: Busca y muestra 12 pokemones por pagina.
 
 <br />
 
@@ -204,9 +204,7 @@ Se desarrollo una aplicación de React/Redux que contiene:
 
 <br />
 
-**📍 FORM PAGE |**: en esta página se encuentra el formulario para crear un nuevo pokemon.
-
-Este formulario es **controlado completamente con JavaScritp**. Cuenta con los siguientes campos:
+**📍 FORM PAGE |** en esta página se encuentra el formulario para crear un nuevo pokemon. Cuenta con los siguientes campos:
 
 -  Nombre.
 -  Vida.
