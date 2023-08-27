@@ -1,0 +1,11 @@
+.loading-cont {
+    width: 97vw;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 79px;
+}
+.loading{    
+    border-radius: 15px;
+}

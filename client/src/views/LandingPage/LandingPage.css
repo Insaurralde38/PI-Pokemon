@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,700,100italic,300italic,400italic,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton {
+  border: 5px solid #50514f;
+  border-radius: 5px;
+  background: transparent;
+  overflow: hidden;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 382px;
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton:hover {
+  border-color: #50514f;
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton:hover .pokemon-ball::before {
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton:hover .pokemon-ball::after {
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton:hover a {
+  transition: none;
+  color: transparent;
+  z-index: 999;
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton:hover a::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton:hover a span:first-child::before,
+.btn-bg.Pokemon .btn-group .ball .pokebutton:hover a span:nth-child(2)::before {
+  transition-delay: 0.3s;
+  transform: translate3d(0, 0, 0);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton .pokemon-ball {
+  position: absolute;
+  content: 'Go!';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton .pokemon-ball::before,
+.btn-bg.Pokemon .btn-group .ball .pokebutton .pokemon-ball::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #ef594f;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton .pokemon-ball::after {
+  top: 50%;
+  background: #fff;
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton a {
+  color: #50514f;
+  font-weight: 600;
+  font-size: 1.5em;
+  transition: color 0.5s 0.25s;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  z-index: 999;
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton a::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #50514f;
+  top: calc(50% - 2.5px);
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton a span {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton a span::before {
+  position: absolute;
+  content: attr(data-letters);
+  left: 0;
+  width: 100%;
+  color: #fff;
+  transition: transform 0.5s;
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton a span:first-child::before {
+  top: 0;
+  color: #ef594f;
+  transform: translate3d(0, 100%, 0);
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton a span:nth-child(2) {
+  top: 50%;
+}
+
+.btn-bg.Pokemon .btn-group .ball .pokebutton a span:nth-child(2)::before {
+  bottom: 0;
+  transform: translate3d(0, -100%, 0);
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.btn {
+  margin: 0 30px 30px 30px;
+  display: block;
+}
+
+.btn-info {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 3.5em;
+  color: #fff;
+}
+
+.btn-mention {
+  margin-bottom: 70px;
+  text-align: center;
+  font-family: 'Lato';
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.btn-mention span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.pokebutton {
+  cursor: pointer;
+  overflow: visible;
+  outline: none;
+  color: #fff;
+  position: relative;
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  box-shadow: 0 5px 0px #383b3d;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.pokebutton:focus {
+  outline: none;
+}
+
+.pokebutton:active {
+  top: 2px;
+  box-shadow: none;
+}
+
+.pokebutton span {
+  display: block;
+}
+
+.pokebutton span:last-child {
+  font-size: 0.6em;
+  font-weight: 300;
+}
+
+.pokebutton-groupt {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pokebutton-group .pokebutton:last-child {
+  margin-bottom: 0;
+}

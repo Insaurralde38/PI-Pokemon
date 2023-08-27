@@ -1,0 +1,21 @@
+.App{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  flex-wrap: wrap;
+  padding: 20px;
+  margin:auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 11px;
+  text-align:center;
+}
+
+body{
+  background-image: url('../src/assets/background.png');
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}

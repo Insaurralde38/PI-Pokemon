@@ -1,0 +1,29 @@
+.filt-order-cont {
+    margin-top: 69px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-butt, .order-butt {
+    color: #405daa;
+    border-radius: 5px;
+    background-color: #f7cd00;
+    border: 2px solid #405daa;
+    box-shadow: 2px 2px 2px #252525;
+    height: 30px;
+    width: 150px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.filter-butt:hover, .order-butt:hover {
+    cursor: pointer;
+}
+
+.reset-button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
