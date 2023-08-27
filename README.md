@@ -132,37 +132,6 @@ Deberás crear dos modelos para tu base de datos. Una será para los pokemones y
 
 <br />
 
-### **🖱 BACK-END**
-
-Se desarrollo un servidor en Node/Express con las siguientes rutas:
-
-#### **📍 GET | /pokemons**
-
--  Obtiene un listado de los pokemons desde pokeapi.
-
-#### **📍 GET | /pokemons/:idPokemon**
-
--  Obtiene el detalle de un pokemon en particular.
-
-#### **📍 GET | /pokemons/name?="..."**
-
--  Obtiene el pokemon que coincida exactamente con el nombre pasado como query parameter (Puede ser de pokeapi o creado por nosotros).
-
-#### **📍 POST | /pokemons**
-
--  Recibe los datos recolectados desde el formulario controlado de la ruta de creación de pokemons por body.
--  Crea un pokemon en la base de datos.
-
-#### **📍 GET | /types**
-
--  Obtiene todos los tipos de pokemons posibles.
-
-<br />
-
----
-
-<br />
-
 ### **🖱 FRONT-END**
 
 Se desarrollo una aplicación de React/Redux que contiene:
@@ -217,6 +186,37 @@ Se desarrollo una aplicación de React/Redux que contiene:
 -  Botón para crear el nuevo pokemon.
 
 > [**IMPORANTE**]: el formulario de creación está validado sólo con JavaScript.
+
+<br />
+
+---
+
+<br />
+
+### **🖱 BACK-END**
+
+Se desarrollo un servidor en Node/Express con las siguientes rutas:
+
+#### **📍 GET | /pokemons**
+
+-  Obtiene un listado de los pokemons desde pokeapi.
+
+#### **📍 GET | /pokemons/:idPokemon**
+
+-  Obtiene el detalle de un pokemon en particular.
+
+#### **📍 GET | /pokemons/name?="..."**
+
+-  Obtiene el pokemon que coincida exactamente con el nombre pasado como query parameter (Puede ser de pokeapi o creado por nosotros).
+
+#### **📍 POST | /pokemons**
+
+-  Recibe los datos recolectados desde el formulario controlado de la ruta de creación de pokemons por body.
+-  Crea un pokemon en la base de datos.
+
+#### **📍 GET | /types**
+
+-  Obtiene todos los tipos de pokemons posibles.
 
 <br />
 
