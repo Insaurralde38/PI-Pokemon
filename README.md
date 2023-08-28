@@ -8,6 +8,8 @@
   <img height="150" src="./pokemon.png" />
 </p>
 
+<div align="center">
+
 ## **📌 TECNOLOGÍAS UTILIZADAS**
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
@@ -20,9 +22,15 @@
 [![Sequelize](https://img.shields.io/badge/Sequelize-31396A?style=flat-square&logo=Sequelize&logoColor=68AEE8&link=https://sequelize.org/)](https://sequelize.org/)
 [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-%23404d59?style=flat-square&logo=postgresql&logoColor=%2361DAFB&link=https://www.postgresql.org/)](https://www.postgresql.org/)
 
+</div>
+
 ---
 
+<div align="center">
+
 ## **⚠️ IMPORTANTE**
+
+</div>
 
 Es necesario contar minimamente con la última versión estable de NodeJS y NPM. Asegúrate de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto. Actualmente las versiónes necesarias son:
 
@@ -48,7 +56,11 @@ npm -v
 
 ---
 
+<div align="center">
+
 ## **📋 PARA COMENZAR...**
+
+</div>
 
 1. Deberás forkear este repositorio para tener una copia del mismo en tu cuenta personal de GitHub.
 
@@ -70,19 +82,11 @@ npm -v
 
 ---
 
-## **📖 ENUNCIADO GENERAL**
+<div align="center">
 
-Es una aplicación en la cual se puedan ver los distintos Pokemon utilizando la api externa [**pokeapi**](https://pokeapi.co/) y a partir de ella poder, entre otras cosas:
+## **📖 ENDPOINTS UTILIZADOS**
 
--  Buscar pokemones.
--  Visualizar la información de los pokemones.
--  Filtrarlos.
--  Ordenarlos.
--  Crear nuevos pokemones.
-
-⚠️ Para las funcionalidades de filtrado y ordenamiento NO se puede utilizar los endpoints de la API externa que ya devuelven los resultados filtrados u ordenados.
-
-### **Únicos end-points que se pueden utilizar**
+</div>
 
 -  [**PokeApi**](https://pokeapi.co/api/v2/pokemon)
 -  **Por id**: _"https://pokeapi.co/api/v2/pokemon/{id}"_
@@ -95,7 +99,7 @@ Es una aplicación en la cual se puedan ver los distintos Pokemon utilizando la 
 
 <div align="center">
 
-## **📁 INSTRUCCIONES**
+## **📁 DETALLES**
 
 </div>
 
