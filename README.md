@@ -38,13 +38,11 @@ npm -v
 
 **ACLARACIÓN:** las dependencias actuales se encuentran en las versiones que venimos trabajando durante el bootcamp.
 
--  **react**: 17.0.1
--  **react-dom**: 17.0.1
--  **react-router-dom**: 5.2.0
--  **redux**: 4.0.5
--  **react-redux**: 7.2.3
-
-Está permitido, **bajo tu responsabilidad**, actualizar las dependencias a versiones más actuales si lo deseas. Versiones mas actuales podrían presentar configuraciones diferentes respecto a las versiones en las que venimos trabajando durante el bootcamp.
+-  **react**: 18.2.0
+-  **react-dom**: 18.2.0
+-  **react-router-dom**: 6.11.1
+-  **redux**: 4.2.1
+-  **react-redux**: 8.0.5
 
 <br />
 
@@ -103,35 +101,6 @@ Es una aplicación en la cual se puedan ver los distintos Pokemon utilizando la 
 
 <br />
 
-### **🖱 BASE DE DATOS**
-
-Son 2 modelos de base de datos. Una es para los pokemones y la otra es para los tipos de pokemones. La relación entre ambos modelos es de muchos a muchos. A continuación las propiedades que tiene cada modelo:
-
-**📍 POKEMONS**
-
--  ID
--  Nombre
--  Imagen
--  Vida
--  Ataque
--  Defensa
--  Velocidad
--  Altura
--  Peso
-
-<br />
-
-**📍 TYPE**
-
--  ID
--  Nombre
-
-<br />
-
----
-
-<br />
-
 ### **🖱 FRONT-END**
 
 Se desarrollo una aplicación de React/Redux que contiene:
@@ -143,7 +112,7 @@ Se desarrollo una aplicación de React/Redux que contiene:
 
 <br />
 
-**📍 HOME PAGE |** la página principal de la SPA contiene:
+**📍 HOME PAGE |** la página principal de la Single Page Application contiene:
 
 -  SearchBar: un input de búsqueda para encontrar pokemones por nombre. La búsqueda debe ser exacta, por lo que sólo lo encontrará si se lo busca con su nombre completo.
 -  Sector en el que se ve el listado de cards con los pokemones. Al iniciar carga los primeros 12 resultados obtenidos desde la ruta **`GET /pokemons`** y muestra su:
@@ -217,6 +186,35 @@ Se desarrollo un servidor en Node/Express con las siguientes rutas:
 #### **📍 GET | /types**
 
 -  Obtiene todos los tipos de pokemons posibles.
+
+<br />
+
+---
+
+<br />
+
+### **🖱 BASE DE DATOS**
+
+Son 2 modelos de base de datos, utilizados para el formulario de creación. Una es para los pokemones y la otra es para los tipos de pokemones. La relación entre ambos modelos es de muchos a muchos. A continuación las propiedades que tiene cada modelo:
+
+**📍 POKEMONS**
+
+-  ID
+-  Nombre
+-  Imagen
+-  Vida
+-  Ataque
+-  Defensa
+-  Velocidad
+-  Altura
+-  Peso
+
+<br />
+
+**📍 TYPE**
+
+-  ID
+-  Nombre
 
 <br />
 
