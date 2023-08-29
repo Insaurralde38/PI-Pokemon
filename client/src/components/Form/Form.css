@@ -15,140 +15,48 @@
     color: white;
     border-radius: 30px;
     padding: 50px 20px;
-    margin-bottom: 50px;
+    margin-bottom: 14px;
 }
 
-/* .back-home-cont{
-    display: flex;
-    margin-top: 30px;
-    
+.form-title{
+    font-size: 30px;
+    color: #F7CD00;
 }
 
-.back-home-butt{
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(0, 162, 255);
-    border: none;
-    height: 30px;
-    width: 100px;
-    margin: 0 5px;
-    text-align: center;
-}
-
-body.darker .back-home-butt{
-    background-color: rgb(73, 73, 73);
-}
-
-.back-home-butt:hover{
-    transform: scale(1.2);
-    background-color: rgb(255, 0, 0);
-}
-
-body.darker .back-home-butt:hover{
-    transform: scale(1.2);
-    background-color: rgb(255, 0, 0);
-}
-
-
-
-body.darker .form-cont {
-    background-color: #39383c;
-}
-
-.form-cont input {
-    width: 200px;
-    border: none;
-    height: 30px;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 5px 5px;
-}
-
-.select-button{
-    margin-top: 30px;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(8, 210, 52);
-    border: none;
-    height: 30px;
-    width: 90px;
-    margin: 0 5px;
-    text-align: center;    
-    text-transform: capitalize;
-}
-
-body.darker .select-button {
-    background-color: red;
-}
-
-.select-button:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
-.selected{
-    color: white;    
-    text-transform: capitalize;
-    border-radius: 15px;
-    border: none;
-    margin: 15px 10px;
-    width: 250px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.createpoke-button {
-    margin-top: 20px;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(8, 210, 52);
-    border: none;
+.form-input {
     height: 35px;
-    width: 150px;
-    margin: 0 5px;
-    text-align: center;
+    width: 250px;
+    max-width: 300px;
+    border: 2px white;
+    border-radius: 1rem;
 }
 
-body.darker .createpoke-button {
-    background-color: red;
+.form-label {    
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 17px;
 }
 
-.createpoke-button:hover {
-    cursor: pointer;
-    transform: scale(1.2);
+.form-dropdown{    
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
-.header{
-    width: 100%;
+.form-type {    
+    width: 55px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
 
-.header img {
-    width: 100%;
-    object-fit: cover;
+.form-button{
+    height: 35px;
+    width: 250px;
+    border-radius: 1rem;
+    font-size: 17px;
+    color: #405daa;
+    background-color: #f7cd00;
+    border: 3px solid #405daa;
 }
-
-.delete-type-cont {
-    background-color: black;
-    padding: 5px 10px;
-    border-radius: 15px;
-    border: 1px solid #fff;
-}
-
-.delete-type-button {
-    margin-left: 5px;
-    border-radius: 15px;
-    border: none;
-    color: #fff;
-    background: none;
-    width: 20px;
-    height: 20px;
-    padding: auto;
-    text-align: center;
-}
-
-.delete-type-button:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    color: red;
-} */
