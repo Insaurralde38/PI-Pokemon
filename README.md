@@ -122,7 +122,7 @@ Se desarrollo una aplicación de React/Redux que contiene:
 **📍 LANDING PAGE |**
 
 -  Una imagen de fondo representativa del proyecto.
--  Botón para ingresar a la **`home page`**.
+-  Botón para ingresar a la **`HOME PAGE`**.
 
 <br />
 
