@@ -4,8 +4,8 @@
 
 # Proyecto Individual | **Pokémon**
 
-<p align="left">
-  <img height="150" src="./pokemon.png" />
+<p align="center">
+  <img src="https://culturageek.com.ar/wp-content/uploads/2023/08/Pokemon-World-Championship-2023-Previa-2-www.culturageek.com_.ar_.png" />
 </p>
 
 <div align="center">
@@ -60,7 +60,15 @@ npm -v
 
 </div>
 
-1. Sí deseas clonar el repositorio en tu computadora para ejecutarlo de manera local, en la carpeta **`api`** deberás crear un archivo llamado: **`.env`** que tenga la siguiente forma:
+**1.** Sí deseas clonar el repositorio en tu computadora para ejecutarlo de manera local, primero es necesario instalar las depencencias de los archivos **`package.json`** tanto del Back-End, como del Front-End. Para ello es necesario que abras una terminal ubicado dentro de la carpeta **`api`** y otra terminal ubicado dentro de la carpeta **`client`**.
+
+-  Cuando te encuentres en estas carpetas, debes ejecutar el comando
+
+```bash
+    npm install
+```
+
+**2.** En la carpeta **`api`** deberás crear un archivo llamado: **`.env`** que tenga la siguiente forma:
 
    ```env
        DB_USER=usuariodepostgres
@@ -69,9 +77,16 @@ npm -v
        DB_NAME=pokemon
    ```
 
-2. Reemplazar **`usuariodepostgres`** y **`passwordDePostgres`** con tus propias credenciales para conectarte a postgres. Este archivo no está incluido en este repositorio de github, ya que las credenciales son información sensible.
+**3.** Reemplazar **`usuariodepostgres`** y **`passwordDePostgres`** con tus propias credenciales para conectarte a postgres. Este archivo no está incluido en este repositorio de github, ya que las credenciales son información sensible.
 
-3. Adicionalmente será necesario que crees, **desde psql (shell o PGAdmin)**, una base de datos llamada **`pokemon`**. Si no realizas este paso de manera manual no podrás visualizar el proyecto de manera local.
+**4.** Adicionalmente será necesario que crees, **desde psql (shell o PGAdmin)**, una base de datos llamada **`pokemon`**. Si no realizas este paso de manera manual no podrás visualizar el proyecto de manera local.
+
+**5.** Para visualizar la aplicación desde el navegador, en ambas terminales previamente abiertas, debes ejecutar el comando:
+
+
+        npm start
+
+Ingresando a <http://localhost:3000> desde el navegador, podrás ver el proyecto en tiempo real.
 
 <br />
 
