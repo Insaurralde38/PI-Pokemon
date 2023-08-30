@@ -2,7 +2,7 @@
     <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img>
 </p>
 
-# **Pokémon** | Proyecto Individual
+# Proyecto Individual | **Pokémon**
 
 <p align="left">
   <img height="150" src="./pokemon.png" />
@@ -28,9 +28,15 @@
 
 <div align="center">
 
-## **⚠️ IMPORTANTE**
+## **📋 DESCRIPCIÓN**
 
 </div>
+
+Es una aplicación en la cual se puedan ver los distintos Pokémon utilizando la API externa [PokéAPI](https://pokeapi.co/) y a partir de ella poder, entre otras cosas:
+
+  - **Buscar pokemons**
+  - **Filtrarlos / Ordenarlos**
+  - **Crear nuevos pokemons**
 
 Es necesario contar minimamente con la última versión estable de NodeJS y NPM. Asegúrate de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto. Actualmente las versiónes necesarias son:
 
@@ -44,39 +50,28 @@ node -v
 npm -v
 ```
 
-**ACLARACIÓN:** las dependencias actuales se encuentran en las versiones que venimos trabajando durante el bootcamp.
-
--  **react**: 18.2.0
--  **react-dom**: 18.2.0
--  **react-router-dom**: 6.11.1
--  **redux**: 4.2.1
--  **react-redux**: 8.0.5
-
 <br />
 
 ---
 
 <div align="center">
 
-## **📋 PARA COMENZAR...**
+## **⚠️ IMPORTANTE!**
 
 </div>
 
-1. Deberás forkear este repositorio para tener una copia del mismo en tu cuenta personal de GitHub.
-
-2. Clona el repositorio en tu computadora para comenzar a trabajar. Este repositorio contiene un **`BoilerPlate`** con la estructura general del proyecto, tanto del servidor como del cliente. El boilerplate cuenta con dos carpetas: **`api`** y **`client`**. En estas carpetas estará el código del back-end y el front-end respectivamente.
-
-3. En la carpeta **`api`** deberás crear un archivo llamado: **`.env`** que tenga la siguiente forma:
+1. Sí deseas clonar el repositorio en tu computadora para ejecutarlo de manera local, en la carpeta **`api`** deberás crear un archivo llamado: **`.env`** que tenga la siguiente forma:
 
    ```env
        DB_USER=usuariodepostgres
        DB_PASSWORD=passwordDePostgres
        DB_HOST=localhost
+       DB_NAME=pokemon
    ```
 
-4. Reemplazar **`usuariodepostgres`** y **`passwordDePostgres`** con tus propias credenciales para conectarte a postgres. Este archivo va ser ignorado en la subida a github, ya que contiene información sensible (las credenciales).
+2. Reemplazar **`usuariodepostgres`** y **`passwordDePostgres`** con tus propias credenciales para conectarte a postgres. Este archivo no está incluido en este repositorio de github, ya que las credenciales son información sensible.
 
-5. Adicionalmente será necesario que crees, **desde psql (shell o PGAdmin)**, una base de datos llamada **`pokemon`**. Si no realizas este paso de manera manual no podrás avanzar con el proyecto.
+3. Adicionalmente será necesario que crees, **desde psql (shell o PGAdmin)**, una base de datos llamada **`pokemon`**. Si no realizas este paso de manera manual no podrás visualizar el proyecto de manera local.
 
 <br />
 
@@ -88,7 +83,7 @@ npm -v
 
 </div>
 
--  [**PokeApi**](https://pokeapi.co/api/v2/pokemon)
+-  [**PokéAPI**](https://pokeapi.co/api/v2/pokemon)
 -  **Por id**: _"https://pokeapi.co/api/v2/pokemon/{id}"_
 -  **Por nombre**: _"https://pokeapi.co/api/v2/pokemon/{name}"_
 -  **Por tipo**: _"https://pokeapi.co/api/v2/type"_
@@ -120,10 +115,10 @@ Se desarrollo una aplicación de React/Redux que contiene:
 
 -  SearchBar: un input de búsqueda para encontrar pokemones por nombre. La búsqueda debe ser exacta, por lo que sólo lo encontrará si se lo busca con su nombre completo.
 -  Sector en el que se ve el listado de cards con los pokemones. Al iniciar carga los primeros 12 resultados obtenidos desde la ruta **`GET /pokemons`** y muestra su:
-   -  ID.
-   -  Imagen.
-   -  Nombre.
-   -  Tipos.
+   -  ID
+   -  Imagen
+   -  Nombre
+   -  Tipos
 -  Cuando se le hace click a una Card redirige al detalle de ese pokemon específico.
 -  Botones/Opciones para **filtrar** por tipo, y por si su origen es de la API o de la base de datos (creados desde el formulario).
 -  Botones/Opciones para **ordenar** tanto ascendentemente como descendentemente los pokemones por orden alfabético, ataque, defensa y por velocidad.
@@ -133,30 +128,30 @@ Se desarrollo una aplicación de React/Redux que contiene:
 
 **📍 DETAIL PAGE |** en esta página se muestra toda la información específica de un pokemon:
 
--  ID.
--  Nombre.
--  Imagen.
--  Vida.
--  Ataque.
--  Defensa.
--  Velocidad.
--  Altura.
--  Peso.
--  Tipo.
+-  ID
+-  Nombre
+-  Imagen
+-  Vida
+-  Ataque
+-  Defensa
+-  Velocidad
+-  Altura
+-  Peso
+-  Tipo
 
 <br />
 
 **📍 FORM PAGE |** en esta página se encuentra el formulario para crear un nuevo pokemon. Cuenta con los siguientes campos:
 
--  Nombre.
--  Vida.
--  Ataque.
--  Defensa.
--  Velocidad.
--  Altura.
--  Peso.
--  Posibilidad de seleccionar/agregar varios tipos en simultáneo.
--  Botón para crear el nuevo pokemon.
+-  Nombre
+-  Vida
+-  Ataque
+-  Defensa
+-  Velocidad
+-  Altura
+-  Peso
+-  Posibilidad de seleccionar/agregar varios tipos en simultáneo
+-  Botón para crear el nuevo pokemon
 
 > [**IMPORANTE**]: el formulario de creación está validado sólo con JavaScript.
 
@@ -225,3 +220,9 @@ Son 2 modelos de base de datos, utilizados para el formulario de creación. Una 
 ---
 
 <br />
+
+<div align="end">
+
+Hecho con 💙💛💙 por [**DIEGO INSAURRALDE**](https://www.linkedin.com/in/djinsaurralde38/) 🐒
+
+</div>
