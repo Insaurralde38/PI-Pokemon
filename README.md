@@ -2,7 +2,7 @@
     <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img>
 </p>
 
-# Proyecto Individual | **Pokémon**
+# Proyecto Individual | [**Pokémon**](https://pokeapi.up.railway.app/)
 
 <p align="center">
   <img src="https://culturageek.com.ar/wp-content/uploads/2023/08/Pokemon-World-Championship-2023-Previa-2-www.culturageek.com_.ar_.png" />
@@ -21,6 +21,7 @@
 [![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat-square&logo=express&logoColor=white&link=https://expressjs.com/es/)](https://expressjs.com/es/)
 [![Sequelize](https://img.shields.io/badge/Sequelize-31396A?style=flat-square&logo=Sequelize&logoColor=68AEE8&link=https://sequelize.org/)](https://sequelize.org/)
 [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-%23404d59?style=flat-square&logo=postgresql&logoColor=%2361DAFB&link=https://www.postgresql.org/)](https://www.postgresql.org/)
+[![Railway](https://img.shields.io/badge/-Railway-13111C?style=flat-square&logo=railway&link=https://railway.app/)](https://railway.app/)
 
 </div>
 
