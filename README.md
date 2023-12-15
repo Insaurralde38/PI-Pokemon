@@ -21,7 +21,7 @@
 [![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat-square&logo=express&logoColor=white&link=https://expressjs.com/es/)](https://expressjs.com/es/)
 [![Sequelize](https://img.shields.io/badge/Sequelize-31396A?style=flat-square&logo=Sequelize&logoColor=68AEE8&link=https://sequelize.org/)](https://sequelize.org/)
 [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-%23404d59?style=flat-square&logo=postgresql&logoColor=%2361DAFB&link=https://www.postgresql.org/)](https://www.postgresql.org/)
-[![Railway](https://img.shields.io/badge/-Railway-13111C?style=flat-square&logo=railway&link=https://railway.app/)](https://railway.app/)
+[![Vercel](https://img.shields.io/badge/-Vercel-black?style=flat-square&logo=vercel&link=https://vercel.com/)](https://vercel.com/)
 
 </div>
 
