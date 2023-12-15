@@ -2,7 +2,7 @@
     <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img>
 </p>
 
-# Proyecto Individual | [**Pokémon**](https://pokeapi.up.railway.app/)
+# Proyecto Individual | [**Pokémon**](https://pokeapi-insa.vercel.app/)
 
 <p align="center">
   <img src="https://culturageek.com.ar/wp-content/uploads/2023/08/Pokemon-World-Championship-2023-Previa-2-www.culturageek.com_.ar_.png" />
