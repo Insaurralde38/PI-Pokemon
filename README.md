@@ -61,7 +61,7 @@ npm -v
 
 </div>
 
-**1.** Sí deseas clonar el repositorio en tu computadora para ejecutarlo de manera local, primero es necesario instalar las depencencias de los archivos **`package.json`** tanto del Back-End, como del Front-End. Para ello es necesario que abras una terminal ubicado dentro de la carpeta **`api`** y otra terminal ubicado dentro de la carpeta **`client`**.
+**1.** Sí deseas clonar el repositorio en tu computadora para ejecutarlo de manera local, primero es necesario instalar las depencencias de los archivos **`package.json`** tanto del Back-End, como del Front-End. Para ello es necesario que abras una terminal ubicado dentro de la carpeta **`Server`** y otra terminal ubicado dentro de la carpeta **`Client`**.
 
 -  Cuando te encuentres en estas carpetas, debes ejecutar el comando
 
@@ -69,7 +69,7 @@ npm -v
     npm install
 ```
 
-**2.** En la carpeta **`api`** deberás crear un archivo llamado: **`.env`** que tenga la siguiente forma:
+**2.** En la carpeta **`Server`** deberás crear un archivo llamado: **`.env`** que tenga la siguiente forma:
 
    ```env
        DB_USER=usuariodepostgres
@@ -183,7 +183,7 @@ Se desarrollo un servidor en Node/Express con las siguientes rutas:
 
 #### **📍 GET | /pokemons**
 
--  Obtiene un listado de los pokemons desde pokeapi.
+-  Obtiene un listado de los pokemons desde PokéAPI.
 
 #### **📍 GET | /pokemons/:idPokemon**
 
@@ -191,7 +191,7 @@ Se desarrollo un servidor en Node/Express con las siguientes rutas:
 
 #### **📍 GET | /pokemons/name?="..."**
 
--  Obtiene el pokemon que coincida exactamente con el nombre pasado como query parameter (Puede ser de pokeapi o creado por nosotros).
+-  Obtiene el pokemon que coincida exactamente con el nombre pasado como query parameter (Puede ser de PokéAPI o creado por nosotros).
 
 #### **📍 POST | /pokemons**
 
