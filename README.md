@@ -93,7 +93,7 @@ Para verificar que versión tienes instalada:
    DB_NAME=pokemon
    ```
 
-    Reemplazar **`usuarioDePostgres`** y **`passwordDePostgres`** con tus propias credenciales para conectarte a Postgres. Este archivo no está incluido en este repositorio de github, ya que las credenciales son información sensible.
+    Reemplazar **`usuarioDePostgres`** y **`passwordDePostgres`** con tus propias credenciales para conectarte a **PostgreSQL**. Este archivo no está incluido en este repositorio de github, ya que las credenciales son información sensible.
 
 2. **Crear base de datos**:
 
