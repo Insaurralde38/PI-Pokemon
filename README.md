@@ -76,7 +76,7 @@ Para verificar que versión tienes instalada:
 
 2. **Instalar dependencias**:
 
-    Asegúrate de tener **Node.js** y **npm** instalados en tu sistema. Luego, instala lasdependencias de los archivos **`package.json`** tanto del Back-End, como del Front-End. Para ello es necesario que abras una terminal ubicado dentro de la carpeta **`Client`** y otra terminalubicado dentro de la carpeta **`Server`**.
+    Asegúrate de tener **Node.js** y **npm** instalados en tu sistema. Luego, instala las dependencias de los archivos **`package.json`** tanto del Back-End, como del Front-End. Para ello es necesario que abras una terminal ubicado dentro de la carpeta **`Client`** y otra terminal ubicado dentro de la carpeta **`Server`**.
 
    ```bash
    npm install
@@ -87,17 +87,17 @@ Para verificar que versión tienes instalada:
     En la carpeta **`Server`** deberás crear un archivo llamado: **`.env`** que tenga la siguiente forma:
 
    ```env
-   DB_USER=usuariodepostgres
+   DB_USER=usuarioDePostgres
    DB_PASSWORD=passwordDePostgres
    DB_HOST=localhost
    DB_NAME=pokemon
    ```
 
-    Reemplazar **`usuariodepostgres`** y **`passwordDePostgres`** con tus propias credenciales para conectarte a postgres. Este archivo no está incluido en este repositorio de github, ya que las credenciales son información sensible.
+    Reemplazar **`usuarioDePostgres`** y **`passwordDePostgres`** con tus propias credenciales para conectarte a Postgres. Este archivo no está incluido en este repositorio de github, ya que las credenciales son información sensible.
 
 2. **Crear base de datos**:
 
-    Adicionalmente será necesario que crees, **desde psql (shell o PGAdmin)**, una base de datos llamada **`pokemon`**. Si no realizas este paso de manera manual no podrás visualizar el proyecto de manera local.
+    Adicionalmente será necesario que crees, desde **psql (shell o PGAdmin)**, una base de datos llamada **`pokemon`**. Si no realizas este paso de manera manual no podrás visualizar el proyecto de manera local.
 
 5. **Añadir variables de entorno**:
 
