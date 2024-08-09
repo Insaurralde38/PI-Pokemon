@@ -5,7 +5,7 @@
 # Proyecto Individual | [**Pokémon**](https://pokeapi-insa.vercel.app/)
 
 <p align="center">
-  <img src="https://culturageek.com.ar/wp-content/uploads/2023/08/Pokemon-World-Championship-2023-Previa-2-www.culturageek.com_.ar_.png" />
+  <img src="https://culturageek.com.ar/wp-content/uploads/2023/08/Pokemon-World-Championship-2023-Previa-2-www.culturageek.com_.ar_.png" alt="Pokémon Banner" />
 </p>
 
 <div align="center">
