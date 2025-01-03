@@ -12,16 +12,16 @@
 
 ## **📌 TECNOLOGÍAS UTILIZADAS**
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=for-the-badge&logo=javascript)
-![HTML5](https://img.shields.io/badge/-HTML5-E46625?style=for-the-badge&logo=html5&logoColor=FFFFFF)
-![CSS](https://img.shields.io/badge/-CSS-663399?style=for-the-badge&logo=css)
-[![React](https://img.shields.io/badge/-React-000000?style=for-the-badge&logo=react&link=https://es.react.dev/)](https://es.react.dev/)
-[![Redux](https://img.shields.io/badge/Redux-%237241BE.svg?style=for-the-badge&logo=redux&logoColor=FFFFFF&link=https://es.redux.js.org/)](https://es.redux.js.org/)
-[![Node.js](https://img.shields.io/badge/-Node.js-000000?style=for-the-badge&logo=Node.js&link=https://nodejs.org/es)](https://nodejs.org/es)
-[![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=FFFFFF&link=https://expressjs.com/es/)](https://expressjs.com/es/)
-[![Sequelize](https://img.shields.io/badge/Sequelize-31396A?style=for-the-badge&logo=Sequelize&logoColor=68AEE8&link=https://sequelize.org/)](https://sequelize.org/)
-[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-%23404d59?style=for-the-badge&logo=postgresql&logoColor=%2361DAFB&link=https://www.postgresql.org/)](https://www.postgresql.org/)
-[![Vercel](https://img.shields.io/badge/-Vercel-000000?style=for-the-badge&logo=vercel&link=https://vercel.com/)](https://vercel.com/)
+![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat-square&logo=javascript)
+![HTML5](https://img.shields.io/badge/-HTML5-E46625?style=flat-square&logo=html5&logoColor=FFFFFF)
+![CSS](https://img.shields.io/badge/-CSS-663399?style=flat-square&logo=css)
+[![React](https://img.shields.io/badge/-React-000000?style=flat-square&logo=react&link=https://es.react.dev/)](https://es.react.dev/)
+[![Redux](https://img.shields.io/badge/Redux-%237241BE.svg?style=flat-square&logo=redux&logoColor=FFFFFF&link=https://es.redux.js.org/)](https://es.redux.js.org/)
+[![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat-square&logo=Node.js&link=https://nodejs.org/es)](https://nodejs.org/es)
+[![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat-square&logo=express&logoColor=FFFFFF&link=https://expressjs.com/es/)](https://expressjs.com/es/)
+[![Sequelize](https://img.shields.io/badge/Sequelize-31396A?style=flat-square&logo=Sequelize&logoColor=68AEE8&link=https://sequelize.org/)](https://sequelize.org/)
+[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-%23404d59?style=flat-square&logo=postgresql&logoColor=%2361DAFB&link=https://www.postgresql.org/)](https://www.postgresql.org/)
+[![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&link=https://vercel.com/)](https://vercel.com/)
 
 </div>
 
