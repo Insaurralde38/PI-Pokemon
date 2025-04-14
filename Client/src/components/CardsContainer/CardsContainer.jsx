@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllPokemons, getTypes, filterByType, filterCreated, sortByName, sortByAttack, sortByDefense, sortBySpeed, toggleDarkMode  } from '../../redux/actions.js'
 import { Card, FilterBar, Loading, Pagination } from '../../components'
-import './CardsContainer.css';
+import styles from './CardsContainer.module.css';
 
 function CardsContainer() {
 
@@ -137,7 +137,7 @@ function CardsContainer() {
           types={types}
         />
       </div>
-      <div className="container">
+      <div className={styles.container}>
         {( !loading || isLoading ) ? <Loading /> : currentPokemons.map(pokemon => {
           return <Card
             key={pokemon.id + pokemon.name}

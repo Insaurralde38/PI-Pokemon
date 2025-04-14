@@ -1,0 +1,12 @@
+.loadingCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97vw;
+  height: 81.61vh;
+  margin-bottom: 0.2rem;
+}
+
+.loading {
+  border-radius: 15px;
+}  

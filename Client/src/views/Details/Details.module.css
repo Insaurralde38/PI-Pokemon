@@ -1,4 +1,4 @@
-#detail{
+.detail {
     width: 60vw;
     height: 65vh;
     position: relative;
@@ -6,9 +6,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    margin-top: 188px
+    margin-top: 188px;
 }
-.detail-container {
+
+.detailContainer {
     max-width: 900px;
     padding-bottom: 40px;
     position: relative;
@@ -49,13 +50,13 @@
     margin-top: 147px;
 }
 
-.emoji-2 {
+.emoji2 {
     width: 60px;
     height: 80px;
     margin-top: 50px;
 }
 
-.subgrid .name {
+.name {
     margin-left: 10px;
     grid-area: name;
     font-family: Montserrat;
@@ -74,7 +75,7 @@
     width: 100%;
 }
 
-.details .row {
+.row {
     display: flex;
     text-transform: capitalize;
     justify-content: space-between;
@@ -86,7 +87,6 @@
     height: 400px;
     width: 400px;
     z-index: 2;
-    /* transition: all 0.5s ease-in-out; */
 }
 
 .picture img {
@@ -131,7 +131,7 @@
     font-size: 36px;
 }
 
-.stats .graphics {
+.graphics {
     flex: 1;
 }
 
@@ -145,21 +145,24 @@
     width: 150px;
     text-transform: capitalize;
     color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Lato;
+    margin: -26px 0 0 0;
 }
 
-.stats .bar {
-    /* width: 300px; */
+.bar {
     flex: 1;
     height: 100%;
 }
 
-.stats .base {
+.base {
     width: 30px;
     padding-left: 10px;
     color: #ffffff;
 }
 
-.bar .inside {
+.inside {
     width: 100%;
     height: 100%;
     background-color: #ffffff;

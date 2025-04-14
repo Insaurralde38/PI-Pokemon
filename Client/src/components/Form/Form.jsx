@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { createPokemon, getTypes } from '../../redux/actions.js';
 import typeLogo from '../Card/TypeLogo';
 import validation from './Validation.js';
-import './Form.css';
+import styles from './Form.module.css';
 
 function Form() {
   const dispatch = useDispatch();
@@ -85,42 +84,53 @@ function Form() {
   };
 
   return (
-    <div className="create-section">
-      <form className="form-cont" onSubmit={handleSubmit} encType="multipart/form-data">
-        <h2 className="form-title">CREATE YOUR OWN POKEMON</h2>
-        <label className="form-label" >Name:</label>
-          <input type="text" name="name" value={form.name} onChange={handleChange} className="form-input"></input>
-          {error.name && <span>{error.name}</span>}
-        {/* <label>image: </label>
-          <input type="file" name="image" onChange={handleFileChange} accept=".jpg, .png" /> */}
-        <label className="form-label" >Hit Points: {form.hp}</label>
-          <input type="range" min="1" max="255" name="hp" value={form.hp} onChange={handleChange}></input>
-        <label className="form-label" >Attack: {form.attack}</label>
-          <input type="range" min="1" max="190" name="attack" value={form.attack} onChange={handleChange}></input>
-        <label className="form-label" >Defense: {form.defense}</label>
-          <input type="range" min="1" max="250" name="defense" value={form.defense} onChange={handleChange}></input>
-        <label className="form-label" >Speed: {form.speed}</label>
-          <input type="range" min="1" max="200" name="speed" value={form.speed} onChange={handleChange}></input>
-        <label className="form-label" >Height: {form.height / 10} Mts.</label>
-          <input type="range" min="1" max="200" name="height" value={form.height} onChange={handleChange}></input>
-        <label className="form-label" >Weight: {form.weight / 10} Kgs.</label>
-          <input type="range" min="1" max="9999" name="weight" value={form.weight} onChange={handleChange}></input>
-        <label className="form-label" >Types:</label>
-          <select className="form-dropdown" name="type" onChange={handleSelect}>
-            {types
-              .sort((a, b) => a.name.localeCompare(b.name))
-              .map((type) => ( <option key={type.id} value={type.name}>{type.name}</option> ))}
-          </select>
-        <div className="selected">
-          { form.types?.map((type) => {
-            const cardLogo = typeLogo[type]
+    <div className={styles.createSection}>
+      <form className={styles.formCont} onSubmit={handleSubmit} encType="multipart/form-data">
+        <h2 className={styles.formTitle}>CREATE YOUR OWN POKEMON</h2>
+
+        <label className={styles.formLabel}>Name:</label>
+        <input type="text" name="name" value={form.name} onChange={handleChange} className={styles.formInput} />
+        {error.name && <span>{error.name}</span>}
+
+        <label className={styles.formLabel}>Hit Points: {form.hp}</label>
+        <input type="range" min="1" max="255" name="hp" value={form.hp} onChange={handleChange} />
+
+        <label className={styles.formLabel}>Attack: {form.attack}</label>
+        <input type="range" min="1" max="190" name="attack" value={form.attack} onChange={handleChange} />
+
+        <label className={styles.formLabel}>Defense: {form.defense}</label>
+        <input type="range" min="1" max="250" name="defense" value={form.defense} onChange={handleChange} />
+
+        <label className={styles.formLabel}>Speed: {form.speed}</label>
+        <input type="range" min="1" max="200" name="speed" value={form.speed} onChange={handleChange} />
+
+        <label className={styles.formLabel}>Height: {form.height / 10} Mts.</label>
+        <input type="range" min="1" max="200" name="height" value={form.height} onChange={handleChange} />
+
+        <label className={styles.formLabel}>Weight: {form.weight / 10} Kgs.</label>
+        <input type="range" min="1" max="9999" name="weight" value={form.weight} onChange={handleChange} />
+
+        <label className={styles.formLabel}>Types:</label>
+        <select className={styles.formDropdown} name="type" onChange={handleSelect}>
+          {types
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((type) => (
+              <option key={type.id} value={type.name}>{type.name}</option>
+            ))}
+        </select>
+
+        <div className={styles.selected}>
+          {form.types?.map((type) => {
+            const cardLogo = typeLogo[type];
             return (
-              <span key={type} className="delete-type-cont">
-                <img className="form-type" src={cardLogo}  onClick={() => handleDelete(type)} alt="" />
+              <span key={type} className={styles.deleteTypeCont}>
+                <img className={styles.formType} src={cardLogo} onClick={() => handleDelete(type)} alt={type} />
               </span>
-            )})}
+            );
+          })}
         </div>
-        <button type="submit" className="form-button">CREATE POKÉMON</button>
+
+        <button type="submit" className={styles.formButton}>CREATE POKÉMON</button>
       </form>
     </div>
   );

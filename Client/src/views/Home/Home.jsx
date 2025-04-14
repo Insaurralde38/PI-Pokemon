@@ -1,5 +1,5 @@
 import { CardsContainer, NavBar } from '../../components'
-import './Home.css'
+import styles from './Home.module.css'
 
 function Home() {
 

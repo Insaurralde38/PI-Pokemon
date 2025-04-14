@@ -1,0 +1,366 @@
+.pokeRainContainer {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 97vh;
+  z-index: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.pokeRainContainer canvas {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0 !important;
+}
+
+.landingContent {
+  position: absolute;
+  display: flex;
+  z-index: 1 !important;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.pokemon .btnGroup .ball .pokebutton {
+  border: 5px solid #50514f;
+  border-radius: 5px;
+  background: transparent;
+  overflow: hidden;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 382px;
+}
+
+.pokemon .btnGroup .ball .pokebutton:hover {
+  border-color: #50514f;
+}
+
+.pokemon .btnGroup .ball .pokebutton:hover .pokemonBall::before {
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.pokemon .btnGroup .ball .pokebutton:hover .pokemonBall::after {
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.pokemon .btnGroup .ball .pokebutton:hover a {
+  transition: none;
+  color: transparent;
+  z-index: 999;
+}
+
+.pokemon .btnGroup .ball .pokebutton:hover a::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.pokemon .btnGroup .ball .pokebutton:hover a span:first-child::before,
+.pokemon .btnGroup .ball .pokebutton:hover a span:nth-child(2)::before {
+  transition-delay: 0.3s;
+  transform: translate3d(0, 0, 0);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.pokemon .btnGroup .ball .pokebutton .pokemonBall {
+  position: absolute;
+  content: 'Go!';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.pokemon .btnGroup .ball .pokebutton .pokemonBall::before,
+.pokemon .btnGroup .ball .pokebutton .pokemonBall::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #ef594f;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.pokemon .btnGroup .ball .pokebutton .pokemonBall::after {
+  top: 50%;
+  background: #fff;
+}
+
+.pokemon .btnGroup .ball .pokebutton a {
+  color: #50514f;
+  font-weight: 600;
+  font-size: 1.5em;
+  transition: color 0.5s 0.25s;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  z-index: 999;
+}
+
+.pokemon .btnGroup .ball .pokebutton a::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #50514f;
+  top: calc(50% - 2.5px);
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.pokemon .btnGroup .ball .pokebutton a span {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.pokemon .btnGroup .ball .pokebutton a span::before {
+  position: absolute;
+  content: attr(data-letters);
+  left: 0;
+  width: 100%;
+  color: #fff;
+  transition: transform 0.5s;
+}
+
+.pokemon .btnGroup .ball .pokebutton a span:first-child::before {
+  top: 0;
+  color: #ef594f;
+  transform: translate3d(0, 100%, 0);
+}
+
+.pokemon .btnGroup .ball .pokebutton a span:nth-child(2) {
+  top: 50%;
+}
+
+.pokemon .btnGroup .ball .pokebutton a span:nth-child(2)::before {
+  bottom: 0;
+  transform: translate3d(0, -100%, 0);
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.ball {
+  margin: 0 30px 30px 30px;
+  display: block;
+}
+
+.btnInfo {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 3.5em;
+  color: #fff;
+}
+
+.btnMention {
+  margin-bottom: 70px;
+  text-align: center;
+  font-family: 'Lato';
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.btnMention span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.pokebutton {
+  border: 5px solid #50514f;
+  border-radius: 5px;
+  background: transparent;
+  overflow: hidden;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 382px;
+  cursor: pointer;
+  overflow: visible;
+  outline: none;
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  box-shadow: 0 5px 0px #383b3d;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.pokebutton:focus {
+  outline: none;
+}
+
+.pokebutton:active {
+  top: 2px;
+  box-shadow: none;
+}
+
+.pokebutton span {
+  display: block;
+}
+
+.pokebutton span:last-child {
+  font-size: 0.6em;
+  font-weight: 300;
+}
+
+.pokebuttonGroup {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pokebuttonGroup .pokebutton:last-child {
+  margin-bottom: 0;
+}
+
+.pokebutton:hover {
+  border-color: #50514f;
+}
+
+.pokebutton:hover .pokemonBall::before {
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.pokebutton:hover .pokemonBall::after {
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.pokebutton:hover a {
+  transition: none;
+  color: transparent;
+  z-index: 999;
+}
+
+.pokebutton:hover a::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.pokebutton:hover a span:first-child::before,
+.pokebutton:hover a span:nth-child(2)::before {
+  transition-delay: 0.3s;
+  transform: translate3d(0, 0, 0);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.pokemonBall {
+  position: absolute;
+  content: 'Go!';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.pokemonBall::before,
+.pokemonBall::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #ef594f;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.pokemonBall::after {
+  top: 50%;
+  background: #fff;
+}
+
+.pokebutton a {
+  color: #50514f;
+  font-weight: 600;
+  font-size: 1.5em;
+  transition: color 0.5s 0.25s;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  z-index: 999;
+}
+
+.pokebutton a::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #50514f;
+  top: calc(50% - 2.5px);
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.pokebutton a span {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.pokebutton a span::before {
+  position: absolute;
+  content: attr(data-letters);
+  left: 0;
+  width: 100%;
+  color: #fff;
+  transition: transform 0.5s;
+}
+
+.pokebutton a span:first-child::before {
+  top: 0;
+  color: #ef594f;
+  transform: translate3d(0, 100%, 0);
+}
+
+.pokebutton a span:nth-child(2) {
+  top: 50%;
+}
+
+.pokebutton a span:nth-child(2)::before {
+  bottom: 0;
+  transform: translate3d(0, -100%, 0);
+}

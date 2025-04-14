@@ -5,10 +5,9 @@ import { getPokemonDetail, clearDetail, deletePokemon } from "../../redux/action
 import { NavBar, Loading } from '../../components';
 import typeLogo from "../../components/Card/TypeLogo";
 import bgColor from './bgColor.js';
-import "./Details.css";
+import styles from "./Details.module.css";
 
 function Details() {
-
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -32,7 +31,7 @@ function Details() {
     event.preventDefault();
     dispatch(deletePokemon(id));
     alert("Pokemon deleted");
-    navigate.push("/home");
+    navigate("/home");
   };
 
   const getFormattedId = () => {
@@ -53,74 +52,78 @@ function Details() {
 
   return (
     <div>
-      <NavBar/>
-    <div id="detail" style={styleDetail}>
-    <div className='detail-container'>
-    <div className="number">{getFormattedId()}</div>    
-    <div className="title">
-      <div className="subgrid">
-        <div>
-            {detail.types?.map((type) => {
-              const cardLogo = typeLogo[type];
-              const emojiClass = emojiCount === 1 ? "emoji" : `emoji-${emojiCount}`;
-              emojiCount++;
-              return (
-                <span id="icon" key={type + id}><img className={emojiClass} src={cardLogo} alt="" /></span>
-              );
-            })}
-        </div>
-        <div className="name">{detail.name}</div>
-        <div className="details">
-          <div className="row">
-            <span>Height:</span>
-            <span>{detail.height / 10} mts.</span>
+      <NavBar />
+      <div id="detail" style={styleDetail} className={styles.detail}>
+        <div className={styles.detailContainer}>
+          <div className={styles.number}>{getFormattedId()}</div>
+          <div className={styles.title}>
+            <div className={styles.subgrid}>
+              <div>
+                {detail.types?.map((type) => {
+                  const cardLogo = typeLogo[type];
+                  const emojiClass = emojiCount === 1 ? styles.emoji : styles.emoji2;
+                  emojiCount++;
+                  return (
+                    <span id="icon" key={type + id}>
+                      <img className={emojiClass} src={cardLogo} alt="" />
+                    </span>
+                  );
+                })}
+              </div>
+              <div className={styles.name}>{detail.name}</div>
+              <div className={styles.details}>
+                <div className={styles.row}>
+                  <span>Height:</span>
+                  <span>{detail.height / 10} mts.</span>
+                </div>
+                <div className={styles.row}>
+                  <span>Weight</span>
+                  <span>{detail.weight / 10} Kgs.</span>
+                </div>
+              </div>
+            </div>
+            <span className={styles.picture}>
+              <img src={detail.imgUrl} alt="" />
+            </span>
           </div>
-          <div className="row">
-            <span>Weight</span>
-            <span>{detail.weight/ 10} Kgs.</span>
+          <div className={styles.stats}>
+            <div className={styles.title}>Stats</div>
+            <div className={styles.graphics}>
+              <div className={styles.row}>
+                <div className={styles.name}>Hit Points:</div>
+                <div className={styles.bar}>
+                  <div className={styles.inside} style={{ width: `${(detail.hp / 255) * 100}%` }}></div>
+                </div>
+                <div className={styles.base}>{detail.hp}</div>
+              </div>
+              <div className={styles.row}>
+                <div className={styles.name}>Attack:</div>
+                <div className={styles.bar}>
+                  <div className={styles.inside} style={{ width: `${(detail.attack / 190) * 100}%` }}></div>
+                </div>
+                <div className={styles.base}>{detail.attack}</div>
+              </div>
+              <div className={styles.row}>
+                <div className={styles.name}>Defense:</div>
+                <div className={styles.bar}>
+                  <div className={styles.inside} style={{ width: `${(detail.defense / 250) * 100}%` }}></div>
+                </div>
+                <div className={styles.base}>{detail.defense}</div>
+              </div>
+              <div className={styles.row}>
+                <div className={styles.name}>Speed:</div>
+                <div className={styles.bar}>
+                  <div className={styles.inside} style={{ width: `${(detail.speed / 200) * 100}%` }}></div>
+                </div>
+                <div className={styles.base}>{detail.speed}</div>
+              </div>
+            </div>
           </div>
+          {detail.custom && (
+            <button onClick={handleDelete}>DELETE</button>
+          )}
         </div>
       </div>
-      <span className='picture'>
-        <img src={detail.imgUrl} alt="" />
-      </span>
-    </div>
-    <div className="stats">
-      <div className="title">Stats</div>
-      <div className="graphics" >
-        <div className="row">
-            <div className="name">Hit Points:</div>
-            <div className="bar" >
-              <div className="inside" style={{ width: `${(detail.hp / 255) * 100}%` }}></div>
-            </div>
-            <div className="base">{detail.hp}</div>
-        </div>
-        <div className="row">
-            <div className="name">Attack:</div>
-            <div className="bar" >
-              <div className="inside" style={{ width: `${(detail.attack / 190) * 100}%` }}></div>
-            </div>
-            <div className="base">{detail.attack}</div>
-        </div>
-        <div className="row">
-            <div className="name">Defense:</div>
-            <div className="bar" >
-              <div className="inside" style={{ width: `${(detail.defense / 250) * 100}%` }}></div>
-            </div>
-            <div className="base">{detail.defense}</div>
-        </div>
-        <div className="row">
-            <div className="name">Speed:</div>
-            <div className="bar" >
-              <div className="inside" style={{ width: `${(detail.speed / 200) * 100}%` }}></div>
-            </div>
-            <div className="base">{detail.speed}</div>
-        </div>
-      </div>
-    </div>
-      { !detail.custom ? null : (<button onClick={(event) => handleDelete(event)}>DELETE</button>) }
-    </div>
-    </div>
     </div>
   );
 }

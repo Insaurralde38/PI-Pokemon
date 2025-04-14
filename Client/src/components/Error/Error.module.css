@@ -1,4 +1,4 @@
-.loading-cont {
+.errorCont {
     width: 97vw;
     align-items: center;
     justify-content: center;
@@ -6,6 +6,7 @@
     margin-top: 80px;
     margin-bottom: 79px;
 }
-.loading{    
+
+.error{    
     border-radius: 15px;
 }

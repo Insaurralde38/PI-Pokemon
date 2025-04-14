@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { getPokemonByName } from '../../redux/actions.js'
-import './SearchBar.css';
+import { getPokemonByName } from '../../redux/actions.js';
+import styles from './SearchBar.module.css';
 
 function SearchBar() {
-
   const dispatch = useDispatch();
   const [input, setInput] = useState('');
 
@@ -13,8 +12,8 @@ function SearchBar() {
   }
 
   const handleSubmit = (event) => {
-    if (!input.trim()){
-      return alert ("Insert a valid name");
+    if (!input.trim()) {
+      return alert("Insert a valid name");
     }
     event.preventDefault();
     dispatch(getPokemonByName(input.trim()));
@@ -23,19 +22,18 @@ function SearchBar() {
 
   return (
     <main>
-      <div className="srch_wrpr">
-        <input type="checkbox" name="" className="checkbox" />
-        <div className="srch_sb_cnt">
+      <div className={styles.srchWrpr}>
+        <input type="checkbox" className={styles.checkbox} />
+        <div className={styles.srchSbCnt}>
           <input
             type="text"
             name="text_bar"
-            id=""
-            className="sech_txt_inpt"
+            className={styles.sechTxtInpt}
             placeholder="Search Pokémon..."
             onChange={handleChange}
             value={input}
           />
-          <button className="srch_btn" onClick={handleSubmit}>
+          <button className={styles.srchBtn} onClick={handleSubmit}>
             <i className="fa fa-search" aria-hidden="true"></i>
           </button>
         </div>

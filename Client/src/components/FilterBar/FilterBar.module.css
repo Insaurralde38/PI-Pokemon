@@ -1,0 +1,44 @@
+.filtOrderCont {
+  margin-top: 69px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterButt,
+.orderButt {
+  color: #405daa;
+  border-radius: 5px;
+  background-color: #f7cd00;
+  border: 2px solid #405daa;
+  box-shadow: 2px 2px 2px #252525;
+  height: 30px;
+  width: 150px;
+  margin: 0 5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.filterButt:hover,
+.orderButt:hover {
+  cursor: pointer;
+}
+
+.resetButton {
+    background-color: #405daa;
+    color: #f7cd00;
+    border: 2px solid #f7cd00;
+    box-shadow: 2px 2px 2px #252525;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 5px;
+    height: 30px;
+    width: 80px;
+}
+
+.resetButton:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}

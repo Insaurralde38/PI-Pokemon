@@ -1,11 +1,11 @@
 import React from "react";
-import error from '../../assets/noPokemons.png'
-import './Error.css';
+import error from '../../assets/noPokemons.png';
+import styles from './Error.module.css';
 
 function Error() {
   return (
-    <div className="error-cont">
-        <img  className="error" src={error} alt="error..."/>
+    <div className={styles.errorCont}>
+      <img className={styles.error} src={error} alt="error..." />
     </div>
   );
 }

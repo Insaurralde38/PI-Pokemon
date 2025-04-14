@@ -1,5 +1,5 @@
 import { Form, NavBar } from '../../components'
-import './Create.css';
+import styles from './Create.module.css'
 
 function Create() {
   return (
@@ -7,7 +7,7 @@ function Create() {
       <NavBar />
       <Form />
     </div>
-  );
+  )
 }
 
-export default Create;
+export default Create
